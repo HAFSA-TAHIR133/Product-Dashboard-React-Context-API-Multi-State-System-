@@ -1,0 +1,229 @@
+/* Home page */
+.home {
+    width: 100%;
+    min-height: 100vh; 
+    padding: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home h1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    letter-spacing: 10px;
+    font-size: 60px;
+}
+.home h2{
+    margin-bottom: 13px;
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+/* Theme Toggle Rules */
+.theme-setting.light {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.theme-setting.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/*  Product Card Layout */
+.product-card {
+    
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%; 
+    max-width: 600px;
+    font-size: 20px;
+}
+
+
+/* Adaptive borders based on theme context */
+.theme-setting.dark .product-card {
+    border-color: #333333;
+    background-color: #1e1e1e;
+}
+
+/* Simple Action Buttons */
+.product-card button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: inherit; /* Matches text color of light/dark background */
+    transition: opacity 0.2s;
+    font-size: 15px;
+}
+
+.product-card button:hover {
+    opacity: 0.8;
+}
+
+.home-btns{
+    display: flex;
+    flex-direction: column;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-bottom: 1px solid #ccc;
+    gap: 50px;
+    font-weight:bold ;
+    font-size: 20px;
+    
+}
+
+/* Link Container spacing */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Base Link Styling */
+.navbar a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+/* navbar */
+
+/* Light Theme Mode */
+.navbar.theme-setting.light {
+    background-color: #ffffff;
+    border-bottom-color: #e2e8f0;
+}
+
+.navbar.theme-setting.light a {
+    color: #4b5563; 
+}
+
+.navbar.theme-setting.light a:hover {
+    color: #000000; 
+}
+
+
+/* Dark Theme Mode */
+.navbar.theme-setting.dark {
+    background-color: #1e293b; 
+    border-bottom-color: #334155;
+}
+
+.navbar.theme-setting.dark a {
+    color: #94a3b8; 
+}
+
+.navbar.theme-setting.dark a:hover {
+    color: #ffffff; 
+}
+
+
+   /* Analytics Page Layout */
+.analytics-page {
+    width: 100%;
+    min-height: 100vh; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 20px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.analytics-page.theme-setting.light {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.analytics-page.theme-setting.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.analytics-page h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.analytics-page h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.analytics-page.theme-setting.light h2 {
+    color: #4b5563; }
+
+.analytics-page.theme-setting.dark h2 {
+    color: #94a3b8; 
+}
+/* setting page layout */
+
+.setting-page {
+    width: 100%;
+    min-height: 100vh; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.setting-page.theme-setting.light {
+    background-color: #ffffff;
+}
+
+.setting-page.theme-setting.dark {
+    background-color: #121212;
+}
+
+.setting-page button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.setting-page.theme-setting.light button {
+    background-color: #121212;
+    color: #ffffff;
+    border-color: #121212;
+}
+
+.setting-page.theme-setting.light button:hover {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.setting-page.theme-setting.dark button {
+    background-color: #ffffff;
+    color: #121212;
+    border-color: #ffffff;
+}
+
+.setting-page.theme-setting.dark button:hover {
+    background-color: #e2e8f0;
+    border-color: #e2e8f0;
+}
